@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopaFilmes", "CopaFilmes\CopaFilmes.csproj", "{5A4A04CB-73D0-43E0-9C22-6CE10C37B9BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopaFilmes.Dominio", "CopaFilmes.Dominio\CopaFilmes.Dominio.csproj", "{E841E81C-C365-48D7-A730-A454B494C132}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A4A04CB-73D0-43E0-9C22-6CE10C37B9BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4A04CB-73D0-43E0-9C22-6CE10C37B9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4A04CB-73D0-43E0-9C22-6CE10C37B9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4A04CB-73D0-43E0-9C22-6CE10C37B9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E841E81C-C365-48D7-A730-A454B494C132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E841E81C-C365-48D7-A730-A454B494C132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E841E81C-C365-48D7-A730-A454B494C132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E841E81C-C365-48D7-A730-A454B494C132}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1365C42-D2EF-4081-93FE-89BE5931821D}
+	EndGlobalSection
+EndGlobal

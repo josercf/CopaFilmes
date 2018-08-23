@@ -1,0 +1,8 @@
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\bin\Debug\netstandard2.0\CopaFilmes.Dominio.deps.json
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\bin\Debug\netstandard2.0\CopaFilmes.Dominio.dll
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\bin\Debug\netstandard2.0\CopaFilmes.Dominio.pdb
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.csproj.CoreCompileInputs.cache
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.AssemblyInfoInputs.cache
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.AssemblyInfo.cs
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.dll
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.pdb
