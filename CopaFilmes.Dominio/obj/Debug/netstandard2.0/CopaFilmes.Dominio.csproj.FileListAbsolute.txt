@@ -6,3 +6,4 @@ C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dom
 C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.AssemblyInfo.cs
 C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.dll
 C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.pdb
+C:\pessoal\CopaFilmes\CopaFilmes.Dominio\obj\Debug\netstandard2.0\CopaFilmes.Dominio.csprojAssemblyReference.cache

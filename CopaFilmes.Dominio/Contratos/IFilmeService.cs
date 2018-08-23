@@ -8,7 +8,7 @@ namespace CopaFilmes.Dominio.Contratos
     {
         Task<IEnumerable<Filme>> Listar();
 
-        IEnumerable<Filme> Processar(IEnumerable<Filme> filmesSelecionados);
+        IEnumerable<Filme> Processar(List<Filme> filmesSelecionados, bool ordenarPorNota);
 
         Partida ProcessarFases(IEnumerable<Filme> filmesSelecionados);
     }

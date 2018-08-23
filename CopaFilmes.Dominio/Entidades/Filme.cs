@@ -6,6 +6,8 @@
         public string titulo { get; set; }
         public int ano { get; set; }
         public float nota { get; set; }
+
+        public override string ToString() => titulo;
     }
 
 }

@@ -24,9 +24,15 @@ namespace CopaFilmes.Controllers
         public  IActionResult Get()
         {
             //var data = await filmeService.Listar();
-
-            var data = filmeService.ProcessarFases(FimesServicoMock.ObterSelecao());
-            return Ok(data);
+            try
+            {
+                var data = filmeService.ProcessarFases(FimesServicoMock.ObterSelecao());
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         // GET api/values/5
@@ -39,8 +45,7 @@ namespace CopaFilmes.Controllers
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
-        {
-        }
+        {}
 
         // PUT api/values/5
         [HttpPut("{id}")]

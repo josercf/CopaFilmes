@@ -1,5 +1,4 @@
 ﻿using CopaFilmes.Dominio.Entidades;
-using System;
 using System.Collections.Generic;
 
 namespace CopaFilmes.Servicos
