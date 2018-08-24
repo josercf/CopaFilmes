@@ -1,0 +1,12 @@
+<section>
+  <mat-card>
+    <mat-card-content>
+      <mat-grid-list cols="4">
+        <mat-grid-tile *ngFor="let filme of filmes">
+          <app-filme [filme]="filme"></app-filme>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-content>
+  </mat-card>
+
+</section>
