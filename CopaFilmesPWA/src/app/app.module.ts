@@ -21,6 +21,8 @@ import {
 import { GridFilmesComponent } from './components/grid-filmes/grid-filmes.component';
 import { FilmeComponent } from './components/filme/filme.component';
 import { PainelComponent } from './components/painel/painel.component';
+import { GridSelecaoServico } from './services/gridSelecaoServico';
+import { FilmePodioComponent } from './components/filme-podio/filme-podio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { PainelComponent } from './components/painel/painel.component';
     CabecalhoComponent,
     GridFilmesComponent,
     FilmeComponent,
-    PainelComponent
+    PainelComponent,
+    FilmePodioComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ import { PainelComponent } from './components/painel/painel.component';
     MatDividerModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers:[GridSelecaoServico],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GridSelecaoServico } from '../../services/gridSelecaoServico';
 
 @Component({
   selector: 'app-painel',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PainelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private servico: GridSelecaoServico) { }
 
   ngOnInit() {
+    this.servico.qtdeSelecionados.subscribe(qtde => this.quantidadeSelecionado = qtde);
   }
 
   quantidadeSelecionado: number = 0;

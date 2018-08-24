@@ -1,9 +1,10 @@
 <mat-card>
- 
-  <div class="row">
-    <div class="col4"><p style="float: left;">Selecionados {{quantidadeSelecionado}} de 8 filmes</p></div>
-    <div class="col4"></div>
-    <div class="col4"></div>
-    <div class="col4"> <button mat-stroked-button>GERAR MEU CAMPEONATO</button></div>
-  </div>
+  <mat-toolbar-row>
+    <span> Selecionados <br/>{{quantidadeSelecionado}} de 8 filmes</span>
+    <div align="end" mat-dialog-actions>
+
+      <button  mat-stroked-button class="example-button" [disabled]="quantidadeSelecionado < 8">GERAR MEU CAMPEONATO</button>
+    </div>
+
+  </mat-toolbar-row>
 </mat-card>
