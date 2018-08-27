@@ -3,7 +3,9 @@
     <span> Selecionados <br/>{{quantidadeSelecionado}} de 8 filmes</span>
     <div align="end" mat-dialog-actions>
 
-      <button  mat-stroked-button class="example-button" [disabled]="quantidadeSelecionado < 8">GERAR MEU CAMPEONATO</button>
+      <button  mat-stroked-button class="example-button" 
+              [disabled]="quantidadeSelecionado < 8"
+              (click)="gerarCampeonato()">GERAR MEU CAMPEONATO</button>
     </div>
 
   </mat-toolbar-row>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Partida } from '../../model/partida';
 
 @Component({
   selector: 'app-filme-podio',
@@ -11,5 +12,8 @@ export class FilmePodioComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  @Input()
+  resultadoFinal: Partida;
 
 }

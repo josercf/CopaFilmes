@@ -18,7 +18,6 @@ export class GridSelecaoServico {
     }
 
     public AtualizarInscritos(): void {
-        console.log(this.filmesSelecionados.length);
         this.qtdeSelecionados.next(this.filmesSelecionados.length);
     }
 }

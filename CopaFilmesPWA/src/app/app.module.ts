@@ -23,6 +23,8 @@ import { FilmeComponent } from './components/filme/filme.component';
 import { PainelComponent } from './components/painel/painel.component';
 import { GridSelecaoServico } from './services/gridSelecaoServico';
 import { FilmePodioComponent } from './components/filme-podio/filme-podio.component';
+import { CopaFilmeServico } from './services/copaFilmeServico';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { FilmePodioComponent } from './components/filme-podio/filme-podio.compon
     FilmePodioComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
@@ -48,7 +51,7 @@ import { FilmePodioComponent } from './components/filme-podio/filme-podio.compon
     MatDividerModule,
     MatToolbarModule
   ],
-  providers:[GridSelecaoServico],
+  providers:[CopaFilmeServico, GridSelecaoServico],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

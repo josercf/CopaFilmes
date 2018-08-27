@@ -6,7 +6,7 @@ namespace CopaFilmes.Dominio.Contratos
 {
     public interface IFilmeService
     {
-        Task<IEnumerable<Filme>> Listar();
+        Task<IEnumerable<Filme>> ListarAsync();
 
         IEnumerable<Filme> Processar(List<Filme> filmesSelecionados, bool ordenarPorNota);
 

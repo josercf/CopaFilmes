@@ -21,7 +21,7 @@ namespace CopaFilmes.Servicos
         /// a partir de uma api externa
         /// </summary>
         /// <returns>IEnumerable<Filme></returns>
-        public async Task<IEnumerable<Filme>> Listar()
+        public async Task<IEnumerable<Filme>> ListarAsync()
         {
             var client = _httpClientFactory.CreateClient("filmeSource");
             var response = await client.GetAsync(FILMES_ENDPOINT);
