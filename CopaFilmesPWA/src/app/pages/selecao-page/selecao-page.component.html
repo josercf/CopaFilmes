@@ -4,3 +4,11 @@
 <br>
 <app-grid-filmes [filmes]="catalogo" *ngIf="!finalista"></app-grid-filmes>
 <app-filme-podio [resultadoFinal]="finalista" *ngIf="finalista"></app-filme-podio>
+
+
+<mat-progress-spinner *ngIf="processando"
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value">
+    </mat-progress-spinner>

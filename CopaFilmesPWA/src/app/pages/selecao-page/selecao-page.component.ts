@@ -15,6 +15,11 @@ export class SelecaoPageComponent implements OnInit {
   instrucao: string = "Selecione 8 filmes que você deseja que entrem na competição e depois pressione o botão Gerar Meu Campeonato para proseguir.";
   catalogo: Filme[] = [];
   finalista: Partida;
+  processando: boolean = true;
+
+  color = 'primary';
+  mode = 'determinate';
+  value = 50;
 
   constructor(private filmesServico: CopaFilmeServico, private gridServico: GridSelecaoServico) { }
 
@@ -22,17 +27,19 @@ export class SelecaoPageComponent implements OnInit {
     this.filmesServico.obterFilmes()
       .subscribe(result => {
         this.catalogo = result;
+        this.processando = false;
       });
   }
 
   public gerarCampeonato(obj: any) {
+    this.processando = true;
     let filmesSelecionados = this.gridServico.filmesSelecionados;
     this.filmesServico.obterFinalistas(filmesSelecionados)
       .subscribe(r => {
-        debugger;
         this.finalista = r;
         this.titulo = "Resultado FInal";
         this.instrucao = "Veja o resultado final do Campeonato de filmes de forma simples e rápida";
+        this.processando = false;
       });
   }
 }

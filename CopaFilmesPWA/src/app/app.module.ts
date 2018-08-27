@@ -17,6 +17,7 @@ import {
   MatCheckboxModule, 
   MatGridListModule,
   MatDividerModule,
+  MatProgressSpinnerModule,
  } from '@angular/material';
 import { GridFilmesComponent } from './components/grid-filmes/grid-filmes.component';
 import { FilmeComponent } from './components/filme/filme.component';
@@ -49,7 +50,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatCheckboxModule,
     MatGridListModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ],
   providers:[CopaFilmeServico, GridSelecaoServico],
   bootstrap: [AppComponent]
