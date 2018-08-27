@@ -13,11 +13,11 @@ export class CopaFilmeServico {
 
     constructor(private http: HttpClient) { }
 
-   public obterFilmes(): Observable<Filme[]> {
+    public obterFilmes(): Observable<Filme[]> {
         return this.http.get<Filme[]>(this.filmesUrl);
     }
 
-   public obterFinalistas(filmesParticipantes: Filme[]): Observable<Partida> {
+    public obterFinalistas(filmesParticipantes: Filme[]): Observable<Partida> {
         return this.http.post<Partida>(this.filmesUrl, filmesParticipantes);
     }
 }

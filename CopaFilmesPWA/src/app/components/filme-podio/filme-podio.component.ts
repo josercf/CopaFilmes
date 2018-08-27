@@ -14,6 +14,6 @@ export class FilmePodioComponent implements OnInit {
   }
 
   @Input()
-  resultadoFinal: Partida;
+  public resultadoFinal: Partida;
 
 }

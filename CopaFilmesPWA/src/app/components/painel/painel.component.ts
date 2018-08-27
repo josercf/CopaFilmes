@@ -1,7 +1,5 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { GridSelecaoServico } from '../../services/gridSelecaoServico';
-import { EventEmitter } from 'events';
-import { CopaFilmeServico } from '../../services/copaFilmeServico';
 
 @Component({
   selector: 'app-painel',
@@ -10,8 +8,7 @@ import { CopaFilmeServico } from '../../services/copaFilmeServico';
 })
 export class PainelComponent implements OnInit {
 
-  @Output()
-  public gerarCampeonatoEvent = new EventEmitter();
+  @Output() OnGerarCampeonato = new EventEmitter();
 
   constructor(private servico: GridSelecaoServico) { }
 
@@ -23,7 +20,7 @@ export class PainelComponent implements OnInit {
   quantidadeSelecionado: number = 0;
 
   gerarCampeonato() {
-    this.gerarCampeonatoEvent.emit(null);
+    this.OnGerarCampeonato.emit(null);
   }
 
 }

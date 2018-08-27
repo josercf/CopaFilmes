@@ -28,8 +28,6 @@ namespace CopaFilmes.Servicos
             response.EnsureSuccessStatusCode();
             var catalago = await response.Content.ReadAsAsync<List<Filme>>();
 
-            OrdenarCatalago(catalago);
-
             return catalago;
         }
 

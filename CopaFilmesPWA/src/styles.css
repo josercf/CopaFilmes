@@ -3,5 +3,10 @@
 
 body {
     padding: 2em 10em;
-    /* background:lightgray; */
+    background:lightgray;
+}
+
+.gray, section > .mat-card{
+    background-color: gray;
+    color: #ffffff;
 }
